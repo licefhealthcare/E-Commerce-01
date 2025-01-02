@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    max-width: 1440px;
+    margin :auto;
+   
+
+   padding: 5px;
+   position: relative;
+   
+
+}
+.notification-bar {
+    max-width: 1440px;
+    height: 40px;
+    background-color: lightblue;
+    display: flex;
+    background-color: #F3F5F7;
+    flex-direction: column;
+
+}
+.notification {
+    margin: auto;
+    max-width: 1440px;
+    background-color: #F3F5F7;
+    padding:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icontext{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.icontext p{
+    font-size: 20px;
+}
+.icon{
+    font-size: 22px;
+}
+.shop{
+    font-size: 18px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #377DFF;
+    border-bottom: 2px solid#377DFF;
+    text-decoration: none ;
+    
+}
+.close{
+    position: absolute;
+    right: 3rem;
+    color: gray;
+    font-size: large;
+}
+
+/* navigation bar start here  */
+
+.navigation{
+   width: 1440px;
+   height: 60px;
+   border: 1px solid ;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 160px 16px 160px ;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    gap: 40px;
+    list-style: none;
+   
+}
+.navlinks li a{
+    text-decoration: none;
+    color:#6C7275;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.navlinks li a:hover{
+    font-size: 24px;
+    color: black;
+}
+.iconcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+
+}
+.icon1{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    gap: 16px;
+    line-height: 24px;
+    
+}
+.icon1 :hover{
+    font-size: 28px;
+    color: black;
+}
+.icon2{
+    display: flex;
+    line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    gap: 9px;
+
+}
+.icon2 :hover{
+    font-size: 28px;
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.logo .bar{
+    font-size: 24px;
+    visibility: hidden;
+}
+.logo a{
+    font-size: 35px;
+    color:#000000;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    font-family: poppins;
+    text-decoration: none ;
+}
+.navlinks li .active{
+    color: black;
+}
+/* mobile menu starts here  */
+.mobilemenu{
+    position: absolute;
+    display: flex ;
+    display: none;
+
+    flex-direction: column;
+    gap: 30px;
+    top: 60px;
+    left: 9px;
+    width: 350px;
+    height: 572px;
+    background-color: #FFFFFF;
+    padding: 16px 32px 16px 32px ;
+
+}
+.mobilemenu1{
+    display: flex;
+    /* visibility: hidden; */
+    justify-content: space-between;
+    ;
+  
+}
+.mobilemenu input{
+    width: 300px;
+    height: 50px;
+}
+.mobilemenu ul{
+    display: flex;
+    align-items: left;
+    list-style: none;
+    flex-direction: column;
+    gap: 30px;
+}
+.mobilemenu ul li a{
+    border-bottom: 2px solid gray;
+    padding: 5px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobileicons{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+/* media query for mobile view */
+@media (min-width: 320px) and (max-width: 600px)
+     {
+   .header{
+    width: auto ;
+    
+
+   }
+   .shop{
+    display: none;
+   }
+   .icon text p {
+     font-size: 12px;
+
+   }
+   .close{
+    right: 10px;
+   }
+   /* navigation starts here  */
+   .navigation{
+    width: auto ;
+    padding:16px 32px 16px 32px ;
+   }
+   .logo .bar{
+    visibility: visible;
+    font-size: 20px;
+
+   }
+   .logo a{
+    font-size: 20px ;
+    line-height: 24px;
+   }
+   .navlinks{
+    display: none;
+
+   }
+   .icon1{
+    visibility: hidden;
+   }
+   .icon2 {
+    font-size: 20px;
+   }
+   /* mobile menu  starts here */
+   
+
+    
+}
+/* for tablet  */
+@media (min-width: 600px) and (max-width: 1024px)   
+{
+   
+
+}
